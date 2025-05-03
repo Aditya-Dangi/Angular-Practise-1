@@ -1,0 +1,31 @@
+<div>
+  <app-search
+    (searchTextChange) = "searchedTextFunc($event)"
+  ></app-search>
+
+  <app-filter 
+    [calcAll] = "calculateAll()"
+    [calcBasic] = "calculateBasic()"
+    [calcInter] = "calculateIntermediate()"
+    [calcAdv] = "calculateAdvanced()"
+    (newButtonSelection) = "currentButtonSelection($event)"
+  ></app-filter>
+</div>
+
+<div class="container-fluid px-4">
+  <div class="row gx-4 gy-4 justify-content-center">
+    <ng-container *ngFor="let card of cardsBox">
+      <!-- currentButtonSelected === 'all' || currentButtonSelected === card.type -->
+      <div
+        class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center"
+        *ngIf="(currentButtonSelected === 'all' || currentButtonSelected === card.type) 
+            && 
+           (searchedText.trim() === '' 
+           || card.title.toLowerCase().includes(searchedText.trim().toLowerCase()) 
+           || card.description.toLowerCase().includes(searchedText.trim().toLowerCase()))" 
+      >
+        <app-cards [data]="card" (buttonClicked)="openAnotherComponent(card)"></app-cards>
+      </div>
+    </ng-container>
+  </div>
+</div>

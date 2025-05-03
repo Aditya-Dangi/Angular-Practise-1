@@ -1,0 +1,243 @@
+[
+    {
+      "title": "Components",
+      "description": "Building blocks of Angular apps. They control views and logic. \nExample: \n<code>@Component({selector: 'app-root', templateUrl: './app.component.html'})</code>",
+      "type": "basic",
+      "id": 1
+    },
+    {
+      "title": "Templates",
+      "description": "HTML part of Angular components with Angular syntax. \nExample: \n<code><h1>{{title}}</h1></code> where {{title}} is a binding from the component.",
+      "type": "basic",
+      "id": 2
+    },
+    {
+      "title": "Data Binding",
+      "description": "Connecting component logic and template (interpolation, property, event binding). \nExample: \n<code><input [value]=\"username\" (input)=\"updateUsername($event)\"></code>",
+      "type": "basic",
+      "id": 3
+    },
+    {
+      "title": "Custom Data Binding",
+      "description": "Creating custom data binding in Angular for communication between components. \nExample: \n<code>@Input() childData: string; @Output() notify: EventEmitter<string> = new EventEmitter();</code>",
+      "type": "intermediate",
+      "id": 32
+    },
+    {
+      "title": "Custom Property Binding",
+      "description": "Binding custom properties between parent and child components. \nExample: \n<code><child-component [childData]=\"parentData\"></child-component></code>",
+      "type": "intermediate",
+      "id": 33
+    },
+    {
+      "title": "String Interpolation",
+      "description": "Binding values from the component to the view using {{}}. \nExample: \n<code><h1>{{title}}</h1></code> where title is a property from the component.",
+      "type": "basic",
+      "id": 34
+    },
+    {
+      "title": "Event Binding",
+      "description": "Binding events from the view to the component. \nExample: \n<code><button (click)=\"onClick()\">Click Me</button></code> where onClick is a method in the component class.",
+      "type": "basic",
+      "id": 35
+    },
+    {
+      "title": "Property Binding",
+      "description": "Binding properties of DOM elements to component properties. \nExample: \n<code><img [src]=\"imageUrl\" alt=\"Image\"></code> where imageUrl is a property in the component.",
+      "type": "basic",
+      "id": 36
+    },
+    {
+      "title": "Directives",
+      "description": "Markers on elements that tell Angular to do something (*ngIf, *ngFor). \nExample: \n<code><div *ngIf=\"isVisible\">Visible Content</div></code>",
+      "type": "basic",
+      "id": 4
+    },
+    {
+      "title": "Structural Directives",
+      "description": "Change the structure of the DOM, like adding or removing elements. \nExample: \n<code><div *ngFor=\"let item of items\">{{item}}</div></code>",
+      "type": "basic",
+      "id": 5
+    },
+    {
+      "title": "Attribute Directives",
+      "description": "Change the appearance or behavior of an element (e.g., ngClass, ngStyle). \nExample: \n<code><div [ngClass]=\"{active: isActive}\">Styled Content</div></code>",
+      "type": "basic",
+      "id": 6
+    },
+    {
+      "title": "Services",
+      "description": "Provide functionality that can be shared across multiple components, typically with dependency injection. \nExample: \n<code>@Injectable({ providedIn: 'root' }) export class MyService {}</code>",
+      "type": "intermediate",
+      "id": 7
+    },
+    {
+      "title": "Dependency Injection (DI)",
+      "description": "Angular’s design pattern to inject service instances into components or other services. \nExample: \n<code>constructor(private myService: MyService) {}</code>",
+      "type": "intermediate",
+      "id": 8
+    },
+    {
+      "title": "Modules",
+      "description": "An Angular app is a modular structure with multiple modules like AppModule, feature modules. \nExample: \n<code>@NgModule({ imports: [CommonModule], declarations: [MyComponent] })</code>",
+      "type": "intermediate",
+      "id": 9
+    },
+    {
+      "title": "Routing",
+      "description": "Define navigation rules for your Angular app. Use routes to load different views based on URL. \nExample: \n<code>@NgModule({ imports: [RouterModule.forRoot([{ path: 'home', component: HomeComponent }]) ]})</code>",
+      "type": "intermediate",
+      "id": 10
+    },
+    {
+      "title": "Lazy Loading",
+      "description": "Optimize your app by loading modules only when they are needed, improving performance. \nExample: \n<code>{ path: 'module', loadChildren: () => import('./module.module').then(m => m.ModuleModule) }</code>",
+      "type": "advanced",
+      "id": 11
+    },
+    {
+      "title": "Forms in Angular",
+      "description": "Handling user input using Template-driven or Reactive forms in Angular. \nExample: \n<code><form [formGroup]=\"myForm\"><input formControlName=\"name\"></form></code>",
+      "type": "intermediate",
+      "id": 12
+    },
+    {
+      "title": "HttpClient",
+      "description": "Communicate with back-end APIs using Angular’s HttpClient module for GET, POST, PUT requests. \nExample: \n<code>this.httpClient.get('api/data').subscribe(data => console.log(data));</code>",
+      "type": "intermediate",
+      "id": 13
+    },
+    {
+      "title": "Observables and RxJS",
+      "description": "Reactive programming with Observables to manage asynchronous events, such as HTTP requests. \nExample: \n<code>this.httpClient.get('api/data').pipe(map(response => response.data)).subscribe(data => console.log(data));</code>",
+      "type": "intermediate",
+      "id": 14
+    },
+    {
+      "title": "Pipes",
+      "description": "Transform data in the template using built-in or custom pipes like date formatting, currency conversion. \nExample: \n<code>{{ date | date: 'short' }}</code>",
+      "type": "intermediate",
+      "id": 15
+    },
+    {
+      "title": "Angular Lifecycle Hooks",
+      "description": "Different stages of a component’s lifecycle (e.g., ngOnInit, ngOnDestroy). \nExample: \n<code>ngOnInit() { console.log('Component initialized'); }</code>",
+      "type": "intermediate",
+      "id": 16
+    },
+    {
+      "title": "Change Detection",
+      "description": "How Angular detects and reacts to changes in data and automatically updates the DOM. \nExample: \n<code>this.changeDetectorRef.detectChanges();</code>",
+      "type": "advanced",
+      "id": 17
+    },
+    {
+      "title": "Routing Guards",
+      "description": "Protect routes from unauthorized users with route guards (CanActivate, CanDeactivate). \nExample: \n<code>canActivate(): boolean { return this.authService.isAuthenticated(); }</code>",
+      "type": "advanced",
+      "id": 18
+    },
+    {
+      "title": "Angular CLI",
+      "description": "Command-line tool to create and manage Angular projects, components, services, etc. \nExample: \n<code>ng generate component newComponent</code>",
+      "type": "basic",
+      "id": 19
+    },
+    {
+      "title": "Angular Material",
+      "description": "UI component library for Angular that implements Google’s Material Design. \nExample: \n<code><mat-button>Click me</mat-button></code>",
+      "type": "advanced",
+      "id": 20
+    },
+    {
+      "title": "Angular Universal (SSR)",
+      "description": "Server-side rendering for Angular apps to improve SEO and performance. \nExample: \n<code>import { ServerModule } from '@angular/platform-server';</code>",
+      "type": "advanced",
+      "id": 21
+    },
+    {
+      "title": "Progressive Web Apps (PWA)",
+      "description": "Build Angular apps that behave like native apps with offline capabilities and installation features. \nExample: \n<code>ng add @angular/pwa</code>",
+      "type": "advanced",
+      "id": 22
+    },
+    {
+      "title": "NgRx",
+      "description": "A reactive state management library for Angular, useful for handling complex state in large apps. \nExample: \n<code>StoreModule.forRoot(reducers)</code>",
+      "type": "advanced",
+      "id": 23
+    },
+    {
+      "title": "Unit Testing",
+      "description": "Test your Angular components and services with tools like Jasmine and Karma. \nExample: \n<code>it('should create the app', () => { expect(app).toBeTruthy(); });</code>",
+      "type": "intermediate",
+      "id": 24
+    },
+    {
+      "title": "End-to-End Testing (E2E)",
+      "description": "Automated testing of Angular apps using Protractor or Cypress to ensure everything works as expected. \nExample: \n<code>describe('App', () => { it('should navigate to the home page'); });</code>",
+      "type": "intermediate",
+      "id": 25
+    },
+    {
+      "title": "Animations",
+      "description": "Add animations to Angular apps for better user experience using Angular’s animation API. \nExample: \n<code>trigger('fadeInOut', [transition('0 => 1', animate('300ms ease-in'))])</code>",
+      "type": "advanced",
+      "id": 26
+    },
+    {
+      "title": "Internationalization (i18n)",
+      "description": "Prepare Angular apps to support multiple languages and cultures. \nExample: \n<code>ng xi18n</code>",
+      "type": "advanced",
+      "id": 27
+    },
+    {
+      "title": "Angular Deployment",
+      "description": "Deploy Angular applications on different platforms like Firebase, Netlify, or custom servers. \nExample: \n<code>firebase deploy</code>",
+      "type": "advanced",
+      "id": 28
+    },
+    {
+      "title": "Optimizing Angular Performance",
+      "description": "Improve the performance of Angular apps using tools like Ahead-of-Time (AOT) compilation, tree-shaking, etc. \nExample: \n<code>ng build --prod</code>",
+      "type": "advanced",
+      "id": 29
+    },
+    {
+      "title": "State Management with NgRx",
+      "description": "Use NgRx for managing the state of Angular applications in a reactive and predictable manner. \nExample: \n<code>StoreModule.forRoot(reducers, { metaReducers })</code>",
+      "type": "intermediate",
+      "id": 30
+    },
+    {
+      "title": "Component Interaction",
+      "description": "Different ways components can communicate with each other using @Input(), @Output(), services, etc. \nExample: \n<code>@Input() childData: string;</code>",
+      "type": "intermediate",
+      "id": 31
+    },
+    {
+      "title": "TypeScript Basics",
+      "description": "Introduction to TypeScript, static typing, and defining variables with types. \nExample: \n<code>let name: string = \"John\";</code>",
+      "type": "intermediate",
+      "id": 37
+    },
+    {
+      "title": "TypeScript Functions",
+      "description": "Defining functions with typed parameters and return types in TypeScript. \nExample: \n<code>function add(a: number, b: number): number { return a + b; }</code>",
+      "type": "intermediate",
+      "id": 38
+    },
+    {
+      "title": "TypeScript Classes",
+      "description": "Creating classes with constructors, properties, and methods in TypeScript. \nExample: \n<code>class Person { constructor(public name: string, public age: number) {} }</code>",
+      "type": "intermediate",
+      "id": 39
+    },
+    {
+      "title": "TypeScript Interfaces",
+      "description": "Defining and implementing interfaces in TypeScript for better structure and validation. \nExample: \n<code>interface User { name: string; age: number; }</code>",
+      "type": "intermediate",
+      "id": 40
+    }
+]
+  

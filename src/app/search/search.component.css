@@ -1,0 +1,12 @@
+span{
+    font-weight: 700;
+    font-size: 2.5vh;
+}
+input:hover{
+    background-color: #dff3ff;
+}
+input:focus{
+    background-color: #d1d2ff;
+    color: rgb(0, 0, 0);
+    border: 2px solid #d1d2ff;    
+}
