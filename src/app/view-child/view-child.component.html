@@ -1,0 +1,17 @@
+<div class="m-2">
+    <div class="m-2">
+        <label for="date">DOB: </label>
+        <input type="date" #dob (blur) = 'calculateAge()'>
+    </div>
+    <div class="m-2">
+        <label for="age">Age: </label>
+        <input type="number" #age>
+    </div>
+</div>
+
+<app-view-childs-child></app-view-childs-child>
+
+<div class="m-3">
+    <button (click)="showChildMessage()">Get Message from Child</button>
+    <p>{{ messageFromChild }}</p>
+</div>

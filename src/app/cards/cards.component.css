@@ -6,5 +6,8 @@
 h3{
     font-weight: 900;
     text-decoration: underline;
-    
+}
+.data-type{
+    text-transform: uppercase;
+    font-weight: 700;
 }

@@ -1,19 +1,19 @@
 [
     {
-      "title": "Components",
-      "description": "Building blocks of Angular apps. They control views and logic. \nExample: \n<code>@Component({selector: 'app-root', templateUrl: './app.component.html'})</code>",
-      "type": "basic",
+      "title": "Template Reference",
+        "description": "A template reference variable (e.g., #inputRef) allows access to DOM elements or Angular components. Example: <input #inputRef><button (click)= \\\"log(inputRef.value)\\\">Click</button> ",
+      "type": "intermediate",
       "id": 1
     },
     {
-      "title": "Templates",
-      "description": "HTML part of Angular components with Angular syntax. \nExample: \n<code><h1>{{title}}</h1></code> where {{title}} is a binding from the component.",
-      "type": "basic",
+      "title": "View Child",
+      "description": "@ViewChild is used to get a reference to a DOM element or component in the class. Example: @ViewChild('inputRef') inputElement!: ElementRef; ngAfterViewInit() { console.log(this.inputElement.nativeElement.value); }",
+      "type": "intermediate",
       "id": 2
     },
     {
-      "title": "Data Binding",
-      "description": "Connecting component logic and template (interpolation, property, event binding). \nExample: \n<code><input [value]=\"username\" (input)=\"updateUsername($event)\"></code>",
+      "title": "ng-content",
+      "description": "<ng-content> inserts content from a parent into a child component.\n\nChild (child.component.html):\n<div class=\"box\"><ng-content></ng-content></div>\n\nParent (parent.component.html):\n<app-child>Hello from Parent!</app-child>",
       "type": "basic",
       "id": 3
     },

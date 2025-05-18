@@ -11,6 +11,11 @@ import { FilterComponent } from './filter/filter.component';
 import { SearchComponent } from './search/search.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReferenceTempComponent } from './reference-temp/reference-temp.component';
+import { ReferenceTempChildComponent } from './reference-temp-child/reference-temp-child.component';
+import { ViewChildComponent } from './view-child/view-child.component';
+import { ViewChildsChildComponent } from './view-childs-child/view-childs-child.component';
+import { NgContentComponent } from './ng-content/ng-content.component';
+import { NgContentChildComponent } from './ng-content-child/ng-content-child.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +26,12 @@ import { ReferenceTempComponent } from './reference-temp/reference-temp.componen
     CardsComponent,
     FilterComponent,
     SearchComponent,
-    ReferenceTempComponent
+    ReferenceTempComponent,
+    ReferenceTempChildComponent,
+    ViewChildComponent,
+    ViewChildsChildComponent,
+    NgContentComponent,
+    NgContentChildComponent
   ],
   imports: [
     BrowserModule,

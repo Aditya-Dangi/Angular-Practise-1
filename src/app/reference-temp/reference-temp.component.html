@@ -3,3 +3,6 @@
     <button (click)="clickButton(input1)">Click Me</button>
     <p>{{input1.value}}</p>
 </div>
+
+<app-reference-temp-child #refer></app-reference-temp-child>
+<span class="fs-3 ms-3">{{refer.text}} lives in {{refer.text2}}</span>

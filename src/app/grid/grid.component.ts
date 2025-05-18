@@ -61,6 +61,10 @@ export class GridComponent implements OnInit {
     if(card.id === 1){
       console.log('[reference]'+ " " + card.id);
       this.router.navigate(['/reference']);
+    }else if(card.id === 2){
+      this.router.navigate(['/view-child']);
+    }else if(card.id === 3){
+      this.router.navigate(['/ng-content']);
     }
   }
 
