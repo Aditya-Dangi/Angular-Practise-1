@@ -16,6 +16,8 @@ import { ViewChildComponent } from './view-child/view-child.component';
 import { ViewChildsChildComponent } from './view-childs-child/view-childs-child.component';
 import { NgContentComponent } from './ng-content/ng-content.component';
 import { NgContentChildComponent } from './ng-content-child/ng-content-child.component';
+import { CustomDirective } from './directive/custom.directive';
+import { CustomAppclassDirective } from './cards/custom-appclass.directive';
 
 @NgModule({
   declarations: [
@@ -31,8 +33,10 @@ import { NgContentChildComponent } from './ng-content-child/ng-content-child.com
     ViewChildComponent,
     ViewChildsChildComponent,
     NgContentComponent,
-    NgContentChildComponent
-  ],
+    NgContentChildComponent,
+    CustomDirective,
+    CustomAppclassDirective,
+ ],
   imports: [
     BrowserModule,
     AppRoutingModule,
