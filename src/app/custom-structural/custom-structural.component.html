@@ -1,0 +1,13 @@
+<div class="m-3 fs-4 p-3">
+  <button class="btn btn-primary" (click)="toggle()">
+    CLICK
+  </button>
+
+  <div *appCustomIf = "display" class="my-3" style="background-color: red; color: white">
+    THIS AREA IS TO BE DISPLAYED
+  </div>
+
+  <div style="background-color: black; color: white;" class="my-3">
+    THIS AREA IS ALWAYS DISPLAYED
+  </div>
+</div>

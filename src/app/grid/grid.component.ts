@@ -11,7 +11,7 @@ export class GridComponent implements OnInit {
 
   constructor(private http: HttpClient, private router: Router) {}
 
-  
+
 
   cardsBox : any[] = [];
 
@@ -25,9 +25,9 @@ export class GridComponent implements OnInit {
           this.cardsBox = data;
       })
   }
-  
-  
-  
+
+
+
   calculateAll():number{
     return this.cardsBox.length;
   }
@@ -65,6 +65,8 @@ export class GridComponent implements OnInit {
       this.router.navigate(['/view-child']);
     }else if(card.id === 3){
       this.router.navigate(['/ng-content']);
+    }else if(card.id === 10){
+      this.router.navigate(['/custom-if']);
     }
   }
 

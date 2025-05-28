@@ -4,11 +4,14 @@ import { ReferenceTempComponent } from './reference-temp/reference-temp.componen
 import { MainBodyComponent } from './main-body/main-body.component';
 import { ViewChildComponent } from './view-child/view-child.component';
 import { NgContentComponent } from './ng-content/ng-content.component';
+import { CustomStructuralComponent } from './custom-structural/custom-structural.component';
+
 const routes: Routes = [
   {path: '', component: MainBodyComponent},
   {path: 'reference', component: ReferenceTempComponent },
   {path: 'view-child', component: ViewChildComponent},
-  {path: 'ng-content', component: NgContentComponent}
+  {path: 'ng-content', component: NgContentComponent},
+  {path: 'custom-if', component: CustomStructuralComponent}
 ];
 
 @NgModule({

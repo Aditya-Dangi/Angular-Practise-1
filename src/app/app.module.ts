@@ -18,6 +18,8 @@ import { NgContentComponent } from './ng-content/ng-content.component';
 import { NgContentChildComponent } from './ng-content-child/ng-content-child.component';
 import { CustomDirective } from './directive/custom.directive';
 import { CustomAppclassDirective } from './cards/custom-appclass.directive';
+import { CustomStructuralComponent } from './custom-structural/custom-structural.component';
+import { CustomIfDirective } from './custom-structural/custom-if.directive';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,8 @@ import { CustomAppclassDirective } from './cards/custom-appclass.directive';
     NgContentChildComponent,
     CustomDirective,
     CustomAppclassDirective,
+    CustomStructuralComponent,
+    CustomIfDirective,
  ],
   imports: [
     BrowserModule,
