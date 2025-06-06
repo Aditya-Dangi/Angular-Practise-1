@@ -108,8 +108,8 @@
       "id": 13
     },
     {
-      "title": "Observables and RxJS",
-      "description": "Reactive programming with Observables to manage asynchronous events, such as HTTP requests. \nExample: \n<code>this.httpClient.get('api/data').pipe(map(response => response.data)).subscribe(data => console.log(data));</code>",
+      "title": "Observables",
+      "description": "Observables are a key part of reactive programming in Angular, used to handle asynchronous operations like data streams and HTTP requests. \nExample: \n<code>this.httpClient.get('api/data').subscribe(data => console.log(data));</code>",
       "type": "intermediate",
       "id": 14
     },

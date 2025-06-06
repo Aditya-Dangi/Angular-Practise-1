@@ -67,6 +67,8 @@ export class GridComponent implements OnInit {
       this.router.navigate(['/ng-content']);
     }else if(card.id === 10){
       this.router.navigate(['/custom-if']);
+    }else if(card.id === 14){
+      this.router.navigate(['/observable']);
     }
   }
 

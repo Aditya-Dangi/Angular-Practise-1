@@ -5,8 +5,7 @@ import { handleAlert } from '../Services/handleAlert.services';
 @Component({
   selector: 'app-cards',
   templateUrl: './cards.component.html',
-  styleUrls: ['./cards.component.css'],
-  providers: [handleAlert]
+  styleUrls: ['./cards.component.css']
 })
 export class CardsComponent implements OnInit {
   levelType=null

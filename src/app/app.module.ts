@@ -20,6 +20,7 @@ import { CustomDirective } from './directive/custom.directive';
 import { CustomAppclassDirective } from './cards/custom-appclass.directive';
 import { CustomStructuralComponent } from './custom-structural/custom-structural.component';
 import { CustomIfDirective } from './custom-structural/custom-if.directive';
+import { ObervablesComponent } from './obervables/obervables.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { CustomIfDirective } from './custom-structural/custom-if.directive';
     CustomAppclassDirective,
     CustomStructuralComponent,
     CustomIfDirective,
+    ObervablesComponent,
  ],
   imports: [
     BrowserModule,
